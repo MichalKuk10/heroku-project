@@ -1,0 +1,3 @@
+Insert into users (name) VALUES ('andrzej');
+Insert into users (name) VALUES ('andrzej');
+Insert into users (name) VALUES ('andrzej');
