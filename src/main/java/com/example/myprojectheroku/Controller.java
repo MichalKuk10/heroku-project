@@ -1,13 +1,14 @@
 package com.example.myprojectheroku;
+import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
 
 import static org.springframework.http.HttpStatus.OK;
 
 @RestController
-@RequestMapping("/")
 public class Controller {
 
-    @ResponseBody
+
+    @GetMapping("/")
     @ResponseStatus(OK)
     public String helloHeroku() {
         return "Hello heroku!";
