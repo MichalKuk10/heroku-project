@@ -18,7 +18,7 @@ public class Controller {
     @ResponseBody
     @ResponseStatus(OK)
     public String helloName(@PathVariable("name") String name) {
-        return "Hello" + name;
+        return "Hello " + name + " !";
     }
 
 }
