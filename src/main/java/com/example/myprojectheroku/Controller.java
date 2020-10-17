@@ -13,4 +13,12 @@ public class Controller {
     public String helloHeroku() {
         return "Hello heroku!";
     }
+
+    @GetMapping("/{name}")
+    @ResponseBody
+    @ResponseStatus(OK)
+    public String helloName(@PathVariable("name") String name) {
+        return "Hello" + name;
+    }
+
 }
